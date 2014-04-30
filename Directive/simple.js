@@ -34,8 +34,26 @@ app.directive("watch", function(){
       console.log("New stuff");
       console.log(scope);
       console.log(element);
-      
+
       console.log(attrs.watch)
+    }
+  }
+});
+
+app.directive("commentAgain", function(){
+  return {
+    restrict: 'M',
+    replace: true,
+    template: "<button class='watch' ng-click='greet()'>{{ something }}</button>",
+    link: function(scope, element, attrs){
+
+      // using scope to set variables is the preferred way.
+      //You can also set stuff with element but it is not a good practice to follow.
+      scope.something = "Bye";
+
+      scope.greet = function () {
+        scope.something = "Hi";
+      };
     }
   }
 });
