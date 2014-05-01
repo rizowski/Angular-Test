@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Master</title>
+    <title>Moderate Directives</title>
     <!--<script type="text/javascript" charset="utf-8" src="lib/angular-animate.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/angular-cookies.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/angular-resources.js"></script>
@@ -10,20 +10,15 @@
     <script type="text/javascript" charset="utf-8" src="lib/angular-touch.js"></script>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="lib/angular.js"></script>
-    <script type="text/javascript" charset="utf-8" src="Directive/simple.js"></script>
+    <script type="text/javascript" charset="utf-8" src="Directive/moderate.js"></script>
   </head>
   <body>
-    <a href="simple.html">Moderate Examples</a>
-    <div ng-app="simple">
-      <!-- directive:comments -->
-
-      <div cool></div>
-
-      <div class="Interesting"></div>
-
-      <div watch="me"></div>
-
-      <!-- directive:comment-again -->
+    <div ng-app="moderate">
+      <div ng-controller="ModerateCtrl">
+        <div enter="sayLoading()">
+          Hover here for effects
+        </div>
+      </div>
     </div>
   </body>
 </html>
